@@ -14,3 +14,15 @@
 	path = chef/cookbooks/openssl
 	url = https://github.com/opscode-cookbooks/openssl.git
 	branch = master
+[submodule "chef/cookbooks/couchdb"]
+	path = chef/cookbooks/couchdb
+	url = https://github.com/opscode-cookbooks/couchdb.git
+	branch = master
+[submodule "chef/cookbooks/erlang"]
+	path = chef/cookbooks/erlang
+	url = https://github.com/opscode-cookbooks/erlang.git
+	branch = master
+[submodule "chef/cookbooks/yum"]
+	path = chef/cookbooks/yum
+	url = https://github.com/opscode-cookbooks/yum.git
+	branch = master

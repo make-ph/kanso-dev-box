@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ringtail64-rvm"
 
-  config.vm.network :private_network, ip: "192.168.33.11"
+  config.vm.network :private_network, ip: "192.168.33.10"
 
   config.vm.synced_folder ".", "/vagrant", id: "vagrant-root", :nfs => true
 
@@ -14,5 +14,13 @@ Vagrant.configure("2") do |config|
     chef.add_recipe "recipe[apt]"
     chef.add_recipe "recipe[build-essential]"
     chef.add_recipe "recipe[vim]"
+    chef.add_recipe "recipe[openssl]"
+    chef.add_recipe "recipe[erlang]"
+    chef.add_recipe "recipe[couchdb]"
+    chef.json = {
+      :couchdb => {
+        :config => { :httpd => { :bind_address => "0.0.0.0" } }
+      }
+    }
   end
 end
