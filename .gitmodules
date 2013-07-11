@@ -26,3 +26,7 @@
 	path = chef/cookbooks/yum
 	url = https://github.com/opscode-cookbooks/yum.git
 	branch = master
+[submodule "chef/cookbooks/nodejs"]
+	path = chef/cookbooks/nodejs
+	url = https://github.com/hectcastro/chef-nodejs
+	branch = master
