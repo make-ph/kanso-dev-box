@@ -30,3 +30,7 @@
 	path = chef/cookbooks/nodejs
 	url = https://github.com/hectcastro/chef-nodejs
 	branch = master
+[submodule "chef/cookbooks/locale"]
+	path = chef/cookbooks/locale
+	url = https://github.com/ngpestelos/chef-locale.git
+	branch = master
