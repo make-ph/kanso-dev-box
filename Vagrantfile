@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe "recipe[nodejs]"
     chef.add_recipe "recipe[locale]"
     chef.json = {
-      :couch_db => {
+      :couchdb => {
         :config => { :httpd => { :bind_address => "0.0.0.0" } }
       }
     }
